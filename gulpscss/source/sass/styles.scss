@@ -1,55 +1,11 @@
-/*!
-This is a generated stylesheet
-Written by Steven Jackson - 21 July 2016 
-
-IMPORTANT:
-DO NOT EDIT THE CSS DIRECTLY
-*/ 
-
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
-ul {
-    &.list__group {
-        width: 100%;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        li {
-            &.list__group__item {
-                padding: 1.5rem;
-                margin: 1.5rem;
-                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
-                transition: all 0.3s; 
-                border-radius: 3px;
 
-                &:hover {
-                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                  transition: all 0.3s;
-                  transform: translateZ(10px);
-                }
-               
-            }
-            div {
-                &.list__group__item--hidden {
-                    display: none;
-                 }
-                 &.list__group__item--show {
-                    display: block;
-                 }
-            }
-            
-            
-        }
-       
-    }
 
-    
-}
-
-  
 @import 'itcss/settings/_settings.colors';
 @import 'itcss/elements/_elements.body';
 
 @import 'itcss/elements/_elements.topnav';
 @import 'itcss/elements/_elements.sidenav';
 @import 'itcss/elements/_elements.hamburger';
+@import 'itcss/elements/_elements.listitem';

@@ -3,14 +3,12 @@
     color: $white;
     background: $sidenav-bg-color;
     padding-top: 1.5rem;
-    
-    width: 0px;
+    width: 0%;
     transition: width 1s;
     -webkit-transition: width 1s; 
     
     &.sidenav--toggle{
-        display: block;
-        width: 300px;
+        width: 50%;
     }
     & ul {
         list-style-type: none;
@@ -23,10 +21,11 @@
                   background-color: lighten($sidenav-bg-color, 20%);
               }
               & a {
+                color: $white;
+                text-decoration: none;
                   &:hover{
                       text-decoration: none;
                   }
-                    color: $white;
               }
            }
         }
