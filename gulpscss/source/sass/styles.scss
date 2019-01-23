@@ -9,5 +9,63 @@ DO NOT EDIT THE CSS DIRECTLY
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 
+$sidenav-bg-color: #282828;
+$white: #fff;
+
+// Page Layout
+#main {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  // Side Navigation
+.side-nav-toggle {
+    color: $white;
+    background: $sidenav-bg-color;
+    padding-top: 1.5rem;
+    width: 200px;
+    transition: width 1s;
+    -webkit-transition: width 1s; 
+    
+    &:hover {
+        width: 300px;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+         & li {
+              color: $white;
+              padding: 15px;
+              &:hover{
+                  background-color: lighten($sidenav-bg-color, 20%);
+              }
+              & a {
+                  &:hover{
+                      text-decoration: none;
+                  }
+                    color: $white;
+              }
+           }
+        }
+    
+
+  }
+  
+
+  // Content
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+
+
+
 @import 'itcss/elements/_elements.body';
 
+@import 'itcss/elements/_elements.sidenav';
