@@ -1,0 +1,36 @@
+// Side Navigation
+.sidenav {
+    color: $white;
+    background: $sidenav-bg-color;
+    padding-top: 1.5rem;
+    
+    width: 0px;
+    transition: width 1s;
+    -webkit-transition: width 1s; 
+    
+    &.sidenav--toggle{
+        display: block;
+        width: 300px;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+         & li {
+              color: $white;
+              padding: 15px;
+              &:hover{
+                  background-color: lighten($sidenav-bg-color, 20%);
+              }
+              & a {
+                  &:hover{
+                      text-decoration: none;
+                  }
+                    color: $white;
+              }
+           }
+        }
+    
+
+  }
+  

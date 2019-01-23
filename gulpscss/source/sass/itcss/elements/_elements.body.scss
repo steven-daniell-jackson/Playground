@@ -1,4 +1,13 @@
-  // Content
+ // Page Layout
+#main {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+ 
+ 
+ // Content
   .content {
     flex-grow: 1;
     padding: 2rem;

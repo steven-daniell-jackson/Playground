@@ -1,0 +1,16 @@
+
+//   Top Navigation
+header {
+    nav {
+        background-color: lighten($sidenav-bg-color,5%);
+        &navbar {
+            &navbar__title {
+                color: $white;
+            }
+        }
+        &span {
+            color: $white;
+        }
+      
+    }
+}
