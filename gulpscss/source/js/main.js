@@ -1,9 +1,9 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+    $(".sidenav").toggleClass("sidenav--toggle");
+  });
   
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+  
+
+});

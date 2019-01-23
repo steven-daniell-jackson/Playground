@@ -19,16 +19,34 @@ $white: #fff;
     overflow: hidden;
   }
 
+
+//   Top Navigation
+header {
+    nav {
+        background-color: lighten($sidenav-bg-color,5%);
+        &navbar {
+            &navbar__title {
+                color: $white;
+            }
+        }
+        &span {
+            color: $white;
+        }
+      
+    }
+}
+
+
   // Side Navigation
-.side-nav-toggle {
+.sidenav {
     color: $white;
     background: $sidenav-bg-color;
     padding-top: 1.5rem;
-    width: 200px;
+    width: 0px;
     transition: width 1s;
     -webkit-transition: width 1s; 
     
-    &:hover {
+    &.sidenav--toggle{
         width: 300px;
     }
     & ul {
@@ -54,18 +72,11 @@ $white: #fff;
   }
   
 
-  // Content
-.content {
-    flex-grow: 1;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+
   
-
-
+  
 
 @import 'itcss/elements/_elements.body';
 
 @import 'itcss/elements/_elements.sidenav';
+@import 'itcss/elements/_elements.hamburger';
