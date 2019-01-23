@@ -24,8 +24,11 @@ ul.list__group li.list__group__item:hover {
   transition: all 0.3s;
   transform: translateZ(10px);
 }
-ul.list__group li.list__group__item.list__group__item--hidden {
+ul.list__group li div.list__group__item--hidden {
   display: none;
+}
+ul.list__group li div.list__group__item--show {
+  display: block;
 }
 
 #main {
